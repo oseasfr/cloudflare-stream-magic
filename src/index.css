@@ -11,69 +11,69 @@
 
 @layer base {
   :root {
-    /* Core surfaces */
-    --background: 220 30% 4%;
+    /* Core surfaces — navy profundo igual ao core.opendata.center */
+    --background: 222 47% 7%;
     --foreground: 210 20% 92%;
 
-    --card: 220 25% 7%;
+    --card: 222 40% 10%;
     --card-foreground: 210 20% 92%;
 
-    --popover: 220 25% 8%;
+    --popover: 222 40% 11%;
     --popover-foreground: 210 20% 92%;
 
-    /* Brand: Electric Cyan */
-    --primary: 185 100% 45%;
-    --primary-foreground: 220 30% 4%;
+    /* Brand: Blue — igual ao botão "Entrar" do core.opendata.center */
+    --primary: 213 94% 57%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 12%;
+    --secondary: 222 35% 15%;
     --secondary-foreground: 210 20% 80%;
 
-    --muted: 220 20% 10%;
-    --muted-foreground: 215 15% 50%;
+    --muted: 222 35% 13%;
+    --muted-foreground: 215 20% 48%;
 
-    --accent: 185 100% 45%;
-    --accent-foreground: 220 30% 4%;
+    --accent: 213 94% 57%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 14%;
-    --input: 220 20% 10%;
-    --ring: 185 100% 45%;
+    --border: 222 30% 16%;
+    --input: 222 35% 13%;
+    --ring: 213 94% 57%;
 
     --radius: 0.5rem;
 
     /* Sidebar */
-    --sidebar-background: 220 30% 5%;
+    --sidebar-background: 222 47% 6%;
     --sidebar-foreground: 210 20% 80%;
-    --sidebar-primary: 185 100% 45%;
-    --sidebar-primary-foreground: 220 30% 4%;
-    --sidebar-accent: 220 20% 10%;
+    --sidebar-primary: 213 94% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 35% 13%;
     --sidebar-accent-foreground: 210 20% 80%;
-    --sidebar-border: 220 20% 10%;
-    --sidebar-ring: 185 100% 45%;
+    --sidebar-border: 222 30% 14%;
+    --sidebar-ring: 213 94% 57%;
 
-    /* Custom tokens */
-    --cyan: 185 100% 45%;
-    --cyan-glow: 185 100% 60%;
-    --cyan-dim: 185 80% 30%;
-    --surface-1: 220 25% 7%;
-    --surface-2: 220 22% 10%;
-    --surface-3: 220 18% 14%;
+    /* Custom tokens — mantém compatibilidade mas com blue primário */
+    --cyan: 213 94% 57%;
+    --cyan-glow: 213 94% 70%;
+    --cyan-dim: 213 80% 35%;
+    --surface-1: 222 40% 10%;
+    --surface-2: 222 36% 13%;
+    --surface-3: 222 30% 17%;
     --success: 142 70% 45%;
     --warning: 38 95% 55%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 30% 4%) 0%, hsl(220 28% 6%) 50%, hsl(185 40% 6%) 100%);
-    --gradient-cyan: linear-gradient(135deg, hsl(185 100% 45%), hsl(200 90% 55%));
-    --gradient-card: linear-gradient(145deg, hsl(220 25% 8%), hsl(220 20% 10%));
+    --gradient-hero: linear-gradient(160deg, hsl(222 47% 5%) 0%, hsl(222 45% 8%) 50%, hsl(213 40% 9%) 100%);
+    --gradient-cyan: linear-gradient(135deg, hsl(213 94% 57%), hsl(213 94% 68%));
+    --gradient-card: linear-gradient(145deg, hsl(222 40% 10%), hsl(222 36% 12%));
     --gradient-danger: linear-gradient(135deg, hsl(0 75% 50%), hsl(15 80% 45%));
 
     /* Shadows / Glows */
-    --glow-cyan: 0 0 20px hsl(185 100% 45% / 0.4), 0 0 60px hsl(185 100% 45% / 0.15);
-    --glow-cyan-sm: 0 0 10px hsl(185 100% 45% / 0.3);
-    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.4);
-    --shadow-deep: 0 8px 40px hsl(0 0% 0% / 0.6);
+    --glow-cyan: 0 0 20px hsl(213 94% 57% / 0.35), 0 0 60px hsl(213 94% 57% / 0.12);
+    --glow-cyan-sm: 0 0 10px hsl(213 94% 57% / 0.25);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.5);
+    --shadow-deep: 0 8px 40px hsl(0 0% 0% / 0.7);
   }
 }
 
