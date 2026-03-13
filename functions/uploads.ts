@@ -7,6 +7,18 @@
 //   MINIO_ACCESS_KEY → Access Key do MinIO
 //   MINIO_SECRET_KEY → Secret Key do MinIO
 
+export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
+  if (request.method === "OPTIONS") {
+    return new Response(null, { status: 204, headers: CORS_HEADERS });
+  }
+  if (request.method !== "PUT") {
+    return new Response(JSON.stringify({ error: "Método não permitido." }), {
+      status: 405,
+      headers: { "Content-Type": "application/json", ...CORS_HEADERS },
+    });
+  }
+  // ... resto do código
+
 interface Env {
   MINIO_ACCESS_KEY: string;
   MINIO_SECRET_KEY: string;
