@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 
 const ACCEPTED_TYPES = ["video/mp4", "video/webm", "video/quicktime", "video/x-msvideo", "video/avi"];
 
-const STREAM_URL = "https://tv.opendata.center/stream";
+const STREAM_URL = "https://5be6bb6f.video-stream-7m7.pages.dev/tv";
 
 type UploadState = "idle" | "validating" | "confirm" | "uploading" | "success" | "error";
 
