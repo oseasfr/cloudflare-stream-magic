@@ -278,9 +278,9 @@ const UploadPage = () => {
 
           {/* Success */}
           {state === "success" && (
-            <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-6 space-y-4">
+            <div className="rounded-xl border border-border bg-card p-6 space-y-4">
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-success shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground">Publicado com sucesso!</p>
                   <p className="text-xs text-muted-foreground">
