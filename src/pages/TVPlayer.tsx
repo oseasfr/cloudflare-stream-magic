@@ -111,7 +111,7 @@ const TVPlayer = () => {
         <div className="absolute top-0 left-0 right-0 p-6 bg-gradient-to-b from-black/70 to-transparent flex items-center justify-between pointer-events-auto">
           <div className="flex items-center gap-2">
             <img
-              src="https://core.opendata.center/assets/logo-white-Dn9-pPgP.png"
+              src="https://www.cafecomcyber.com.br/lovable-uploads/icone-home.png"
               alt="OPEN"
               className="w-5 h-5 object-contain opacity-70"
               onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
