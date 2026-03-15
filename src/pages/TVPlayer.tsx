@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { Volume2, VolumeX, Tv } from "lucide-react";
 
 // Fixed stream URL — always stream.mp4 from R2 public bucket
-const STREAM_URL = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+// Local dev fallback:
 // In production: "https://pub-xxxx.r2.dev/public/stream.mp4"
+import { STREAM_URL } from "@/config/stream";
 
 const TVPlayer = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const uiTimeout = useRef<number | null>(null);
+
   const [muted, setMuted] = useState(true);
-  const [started, setStarted] = useState(false);
-  const [error, setError] = useState(false);
   const [showUI, setShowUI] = useState(true);
-  const uiTimeout = useRef<ReturnType<typeof setTimeout>>();
+  const [error, setError] = useState(false);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
     const el = videoRef.current;
@@ -114,12 +116,11 @@ const TVPlayer = () => {
               className="w-5 h-5 object-contain opacity-70"
               onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
             />
-            <span className="text-xs font-black text-white/70 tracking-wide">OPEN</span>
-            <span className="text-xs text-white/40 tracking-[0.15em] font-semibold">DATACENTER</span>
+            <span className="text-xs font-black text-white/80 tracking-wide">Stream | Café com Cyber</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse-glow" />
-            <span className="text-xs font-mono text-white/60">tv.opendata.center/stream</span>
+            <span className="text-xs font-mono text-white/60">cafecomcyber.com.br/stream</span>
           </div>
         </div>
 
