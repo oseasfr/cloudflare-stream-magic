@@ -19,7 +19,7 @@ const NavBar = () => {
             className="w-6 h-6 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
           />
-          <span className="font-black text-sm tracking-wide text-foreground">Café com Cyber</span>
+          <span className="font-black text-sm tracking-wide text-foreground">Steam | Café com Cyber</span>
           <span className="text-xs tracking-[0.2em] text-muted-foreground font-semibold uppercase hidden sm:block">
           </span>
         </Link>
